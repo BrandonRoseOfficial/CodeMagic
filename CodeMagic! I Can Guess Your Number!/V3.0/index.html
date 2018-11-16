@@ -1,0 +1,59 @@
+<!-- Code By Brandon Rose 2018 
+Please do not steal or at least if you're going to steal...leave a like first :)
+
+P.S. This isnt the final version. I plan on adding more features and easter eggs as I go on. This is just the first build. :D
+
+Run program again to Play again...still working on that 
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Guess The Number</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="main.css" type="text/css"> 
+	</head>
+	<body>
+	    <div id="mainMenu" class="scrn">
+	        <h1>CodeMagic!</h1>
+	        <p>Created By: Brandon Rose</p>
+	        <div class="btn-pack">
+	            <button class="btn" onclick="playGame();">Play Game</button>
+	            <button class="btn" onclick="changeTheme();">Change Theme</button>
+	            <button class="btn" onclick="credits();">Credits</button>
+	        </div>
+	    </div>
+	    <div id="diffSelect" class="scrn">
+	        <h1>Please Select Your Difficulty</h1>
+	        <button class="btn" onclick="loadGame(); easy();">Easy</button>
+	        <button class="btn" onclick="medium();">Medium</button>
+            <button class="btn" onclick="hard();">Hard</button>
+            <br/>
+            <button id="menuBtn" class="btn" onclick="menuScrn();" style="margin-top: 5%;">Menu</button>
+	    </div>
+	    <div id="credits" class="scrn">
+	        <h1>Credits</h1>
+	        <p>This game was made by Brandon Rose. Seeing as how this was my first "game" ever it actually took me a while. However, creating this game introduced me to DOM manipulation and for that i'm forever grateful.<br /> I hope to create more games in the near future and continue my "CodeMagic!" series.<br />  Thank you for playing!</p>
+            <button id="menuBtn" class="btn" onclick="menuScrn();">Menu</button>
+        </div>
+	    <div id="gameArea" class="scrn">
+		<h1>Guess The Number Between 0 - <span id="btwnNum"></span></h1>
+<p>You only get <span id="lives" style="color: red"></span> Lives</p>
+		<input id="userGuess" type="number">
+<button type="button" class="btn btn-primary" onclick="submitGuess(), guessHistory()">Submit Guess</button>
+<h2 id="hotCold"></h2>
+		<h3>Numbers You've Already Guessed:</h3>
+        <p id="guessField"></p>
+        <p id="winOrLose"></p>
+		<button id="checkAnswer" class="btn btn-primary" onclick="checkAnswer()">Reveal Answer</button>
+		<p id="winOrLose"></p>
+        <button id="playAgain" class="btn btn-danger" onclick="playAgain()">Play Again</button>
+        <button id="menuBtn" onclick="menuScrn();">Menu</button>
+		</div>
+        
+        <!-- Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+	</body>
+</html>

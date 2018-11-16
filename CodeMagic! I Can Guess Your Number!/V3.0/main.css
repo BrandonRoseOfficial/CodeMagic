@@ -1,0 +1,26 @@
+body {
+	text-align: center;
+	margin-top: 20%;
+	background-color: #2bc3ff;
+}
+#checkAnswer
+{
+	display: none;
+}
+#playAgain
+{
+	display: none;
+}
+#diffSelect
+{
+    display: none;
+}
+#credits
+{
+    display: none;
+}
+#gameArea
+{
+    display: none;
+    text-align: center;
+}

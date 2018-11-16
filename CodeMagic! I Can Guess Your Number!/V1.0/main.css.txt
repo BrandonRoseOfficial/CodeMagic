@@ -1,0 +1,61 @@
+body
+{
+  background-color: #71a4f7;
+}
+.header
+{
+  color: yellow;
+}
+#introduction
+{
+  margin-top: 15%;
+  text-align: center;
+}
+.stage
+{
+  text-align: center;
+}
+table
+{
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  font-size: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#stage1
+{
+  background-color: red;
+  color: white;
+}
+#stage2
+{
+  background-color: yellow;
+  color: black;
+}
+#stage3
+{
+  background-color: green;
+  color: white;
+}
+#stage4
+{
+  background-color: blue;
+  color: white;
+}
+#stage5
+{
+  background-color: purple;
+  color: white;
+}
+.colorcube
+{
+  height: 200px;
+  width: 200px;
+  display: inline-block;
+}
+.colorcube:hover
+{
+  background-color: black;
+}

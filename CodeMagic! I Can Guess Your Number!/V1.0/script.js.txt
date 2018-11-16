@@ -1,0 +1,64 @@
+/*var red = 1, yellow = 2, green = 4, blue = 8, purple = 16;*/
+function one() {
+  document.getElementById('introS1').style.display = "none";
+  document.getElementById('introS2').style.display = "";
+}
+function two()
+{
+  document.getElementById('introS2').style.display = "none";
+  document.getElementById('introS3').style.display = "";
+}
+function three()
+{
+  document.getElementById('introS3').style.display = "none";
+  document.getElementById('introS4').style.display = "";
+}
+  function four()
+{
+  document.getElementById('introS4').style.display = "none";
+  document.getElementById('stageOne').style.display = "";
+}
+function five()
+{
+  document.getElementById('stageOne').style.display = "none";
+  document.getElementById('stageTwo').style.display = "";
+}
+function six()
+{
+  document.getElementById('stageTwo').style.display = "none";
+  document.getElementById('stageThree').style.display = "";
+}
+function seven()
+{
+  document.getElementById('stageThree').style.display = "none";
+  document.getElementById('stageFour').style.display = "";
+}
+function eight()
+{
+  document.getElementById('stageFour').style.display = "none";
+  document.getElementById('stageFive').style.display = "";
+}
+function nine()
+{
+  document.getElementById('stageFive').style.display = "none";
+  document.getElementById('colorPicker').style.display = "";
+}
+function ten()
+{
+  document.getElementById('colorPicker').style.display = "none";
+  document.getElementById('result').style.display = "";
+}
+var red = document.getElementById('redCube');
+var yellow = document.getElementById('yellowCube');
+var green = document.getElementById('greenCube');
+var blue = document.getElementById('blueCheck');
+var purple = document.getElementById('purpleCube');
+var answerInner;
+var answer = document.getElementById('answer').innerHTML(answerInner + '');
+function result()
+{
+  if(blue.checked = true)
+    {
+      answerInner = 8;
+}
+};

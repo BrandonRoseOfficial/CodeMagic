@@ -1,0 +1,187 @@
+<html>
+  <body>
+      <div class="container" id="introduction">
+        <div class="container" id="introS1">
+        <h1 style="color: yellow;">Code Magic! I Can Guess Your Number!</h1>
+        <h2>Created By Brandon Rose</h2>
+          <button class="btn" id="btn1" onclick="one();">Let's Play!</button>
+        </div>
+        <div class="container" id="introS2" style="display: none;">
+          <h1 class="header">So the first thing I need for you to do is pick a number between 1-30</h1>
+          <h2>Once you have the number you can click the button below to proceed</h2>
+          <button class="btn" id="btn2" onclick="two();">Continue!</button>
+        </div>
+        <div class="container" id="introS3" style="display: none;">
+          <h1 class="header">Instructions</h1>
+          <h2>So what's gonig to happen is that i'm going to display multiple number sets with different colors. If you see your number on that color set, remember that color because it'll be extremely important at the end.</h2>
+          <h2>If you understand, click the 'Got It!' button below:</h2>
+          <button class="btn" id="btn3" onclick="three();">Got It!</button>
+        </div>
+        <div class="container" id="introS4" style="display: none;">
+          <h1 class="header">So the first thing i need for you to do is pick a number between 1-30</h1>
+          <h2>Once you have the number you can click the button below to proceed</h2>
+          <button class="btn" id="btn4" onclick="four();">Continue!</button>
+        </div>
+    </div>
+      <div class="container stage" id="stageOne" style="display: none;">
+        <table id="stage1">
+          <tr>
+            <td>01</td>
+            <td>03</td>
+            <td>05</td>
+            <td>07</td>
+          </tr>
+          <tr>
+            <td>09</td>
+            <td>11</td>
+            <td>13</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>19</td>
+            <td>21</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>27</td>
+            <td>29</td>
+            <td>31</td>
+          </tr>
+        </table>
+        <button class="btn" id="btn5" onclick="five();">Continue!</button>
+    </div>
+      <div class="container stage" id="stageTwo" style="display: none;">
+        <table id="stage2">
+          <tr>
+            <td>02</td>
+            <td>03</td>
+            <td>06</td>
+            <td>07</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>11</td>
+            <td>14</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>19</td>
+            <td>22</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>26</td>
+            <td>27</td>
+            <td>30</td>
+            <td>31</td>
+          </tr>
+        </table>
+        <button class="btn" id="btn6" onclick="six();">Continue!</button>
+    </div>
+      <div class="container stage" id="stageThree" style="display: none;">
+        <table id="stage3">
+          <tr>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+            <td>07</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+          </tr>
+        </table>
+        <button class="btn" id="btn7" onclick="seven();">Continue!</button>
+  </div>
+     <div class="container stage" id="stageFour" style="display: none;">
+        <table id="stage4">
+          <tr>
+            <td>08</td>
+            <td>09</td>
+            <td>10</td>
+            <td>11</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+          </tr>
+        </table>
+       <button class="btn" id="btn8" onclick="eight();">Continue!</button>
+  </div>
+     <div class="container stage" id="stageFive" style="display: none;">
+        <table id="stage5">
+          <tr>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+          </tr>
+          <tr>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+          </tr>
+        </table>
+       <button class="btn" id="btn9" onclick="nine();">Continue!</button>
+  </div>
+    <div class="container stage" id="colorPicker" style="display: none;">
+      <h1>Okay so now hopefully you remember your colors still, click on the colors that apply to your number out of the five below:</h1>
+      <form>
+      <input id="redCheck" type="checkbox" value="1"><div class="colorcube" id="redCube" style="background-color: red;"></div>
+       <input id="yellowCheck" type="checkbox" value="2"><div class="colorcube" id="yellowCube" style="background-color: yellow;"></div>
+       <input id="greenCheck" type="checkbox" value="4"><div class="colorcube" id="greenCube" style="background-color: green;"></div>
+       <input id="blueCheck" type="checkbox" value="8"><div class="colorcube" id="blueCube" style="background-color: blue;"></div>
+       <input id="purpleCheck" type="checkbox" value="16"><div class="colorcube" id="purpleCube" style="background-color: purple;"></div>
+      <button class="btn" id="btn10" onclick="ten(); result();">Continue!</button>
+      </form>
+    </div>
+    <div class="container" id="result" style="display: none;">
+      <h1>Your Number Is:</h1>
+      <h1 id="answer" style="color: yellow;"></h1>
+    </div>
+  </body>
+</html>
